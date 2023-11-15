@@ -17,7 +17,11 @@
         </div>
     </nav>
     <div class="container mt-4">
-        <table class="table table-bordered table-striped">
+        <div class="d-flex align-items-center justify-content-between">
+            <h1>Listagem de usuários cadastrados</h1>
+            <a href="{% url 'home' %}" class="btn btn-warning">Voltar</a>
+        </div>
+        <table class="table table-bordered table-striped mt-4">
             <tr>
                 <th>id</th>
                 <th>Nome</th>
