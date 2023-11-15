@@ -19,11 +19,12 @@
 
     <div class="container d-flex align-items-center flex-column justify-content-center mt-4">
         <h1>Cadastre aqui!</h1>
-        <form class="row g-3 mt-4 d-flex align-items-center justify-content-center flex-column w-100">
+        <form class="row g-3 mt-4 d-flex align-items-center justify-content-center flex-column w-100" action="{% url 'listagem_usuarios' %}" method="post">
             <div class="col-md-4">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" name="nome" id="nome" class="form-control border-0 rounded bg-secondary p-2">
             </div>
+
             <div class="col-md-4">
                 <label for="idade" class="form-label">Idade</label>
                 <input type="text" name="idade" id="idade" class="form-control border-0 rounded bg-secondary p-2">
