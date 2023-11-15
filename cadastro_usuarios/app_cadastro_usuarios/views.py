@@ -14,7 +14,7 @@ def usuarios(request):
     novo_usuario.save()
     # Exibir todos os usuarios ja cadastrados em uma nova página
     usuarios = {
-        'usuarios': Usuarios.object.all()
+        'usuarios': Usuarios.objects.all()
     }
     # Retornar os dados da página de listagem de usuarios
     return render(request, 'usuarios/usuarios.html', usuarios)
